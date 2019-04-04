@@ -1,0 +1,56 @@
+.swiper-container  {
+  width: 100%;
+  height: 400PX;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.hardware_box{width: 100%;background: #ECECEC;padding: 50px 0;}
+.hardware_content{width: 65%;margin: 0 auto;}
+.hardware_content,.hardware_details_top{display: flex;flex-direction: row;}
+.hardware_content_left{width: 200px;background: white;}
+.hardware_content_right_title i{float: right;padding: 0 5px;font-size: 12px;border: 1px solid #CCCCCC;margin: 0 2px;}
+.hardware_content_right{width: 75%;background: white;}
+.hardware_name{text-align: center;background: #ff8400;color: white;line-height: 50px;font-size: 20px;}
+.hardware_nav li i{background: #eeeeee;padding: 5px;width: 150px;display: block;text-align: center;margin: 0 auto;margin-top: 5px;cursor: pointer;}
+.swiper-container-two{width: 180px;height: 130px;margin: 0 auto;}
+.hardware_content_right{margin-left: 20px;}
+.hardware_content_right>p{font-size:16px;color: #999999;margin:10px;border-bottom: 1px solid #999999;padding: 5px 0;}
+.hardware_content_list{padding: 0 10px;}
+.hardware_content_list div{border: 1px solid #E3E3E3;}
+.hardware_content_list>li{float: left;width: 25%; box-sizing: border-box;  padding: 5px;       }
+.hardware_content_list>li img{display: block;width: 90%;margin: 5px auto;height: 90%;transform: scale(.9);transition: all .5s ease; }
+.hardware_content_list>li b{text-align: center;display: block;}
+.hardware_content_list div:hover{border: 1px solid #ff8400;}
+.hardware_content_list>li img:hover{transform: scale(1);}
+nav{width: 250px;margin: 0 auto;}
+.hardware_details{padding: 20px;}
+.hardware_details_top{padding:0px 10px;}
+.hardware_details_img{border: 2px solid #E3E3E3;padding: 10px;}
+.hardware_details_img img{width: 200px;height: 200px;display: block;}
+.hardware_details_name{margin-left: 50px;}
+.hardware_details_bottom{margin: 10px;}
+.hardware_details_bottom>p{  color: #FFFFFF; background: #FF8400;padding-left: 10px;line-break: 24px;}
+
+.list_hide{display: none;}
+.product_active{color: #ff8400;}
+
+@media screen and (max-width: 640px) {
+	.swiper-container {height: 150px;}
+	.hardware_box{padding: 20px 0;}
+	.hardware_content{width: 90%;flex-direction: column;}
+	.hardware_nav{display: flex; flex: row;}
+	.hardware_content_right{margin-left: 0px;margin: 0 auto;width: 100%;}
+	.hardware_content_list li{width: 50%;}
+	.hardware_content_left{width: 100%;}
+	.hardware_nav li{width: 50%;}
+	.hardware_nav li i{background: white;width: 100px;}
+	.hardware_content_left_bottom,.hardware_name{display: none;}
+	.hardware_details_top{flex-direction: column;}
+	.hardware_details_img{width: 100%;}
+	.hardware_details_img img{width: 100%;}
+	.hardware_details_name{margin-left: 10px;}
+	.hardware_details_name>h3{font-size: 20px;}
+
+}

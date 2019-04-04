@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.top{
+	width: 100%;background: #f4f4f4;
+}
+.same_center,.same_center_bottom,.same_center_middle,.product_center,.news_content,.about_content{
+	width: 65%;
+	margin: 0 auto;
+}
+header .top_title{
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	color: #818181;
+}
+
+header .top_msg{padding: 5px 0;margin: 0;}
+.top_msg a{padding: 0px 8px;float: right;}
+.top_msg a:nth-child(2){
+	border-right: 1px solid #337ab7;
+}
+.middle{width: 100%;margin-top: 5px;}
+header .company{padding: 0;}
+header .slogan{padding: 0;}
+header .tel{padding: 0;}
+.company{display: flex;flex-direction: row;}
+.company >h3{color: #ff8400;font-size: 50px;margin: 0;line-height: 1.2;}
+.company_name{margin-left: 10px;}
+.company_name,.tel_num{display: flex;flex-direction: column;}
+.company_name i:nth-child(1){font-size: 26px;font-weight: 500;}
+.company_name i:nth-child(2){font-size: 16px;}
+.slogan ul {display: flex;flex-direction: row;margin-top: 39px;}
+.slogan ul li{flex: 1;text-align: center;}
+.tel>div{float: right;}
+.tel_img{font-size: 30px;color: #666;margin-top: 15px;}
+.tel_num b{color: #666;margin-left: 10px;}
+.tel_num b:last-child{font-size: 24px;line-height: 40px;}
+.bottom{width: 100%;background: #ff8400;}
+ul.nav_metals {margin-bottom: 0px;}
+.nav_metals li{color: #FFFFFF;font-size: 14px;line-height: 50px;width: 12%;float: left;}
+.nav_metals li i{display: block;text-align: center;}
+.nav_metals li:hover{cursor:pointer; background: #695036;}
+.nav_active{background: #695036;}
+
+/*nav small*/
+@media screen and (max-width: 640px) {
+	.same_center_bottom{width: 100%;}
+	.company{justify-content: center;}
+	.company_name{margin-left: 2%;margin-bottom: 0px;margin-top: 10px;}
+    .company_name i:nth-child(1){font-size: 16px;}
+    .company_name i:nth-child(2){font-size: 12px;}
+    .nav_metals li{line-height: 30px;width: 33.33%;text-align: center;border: 1px solid #ff992c;}
+    .nav_metals li:nth-child(3){border-right: none;}
+    .nav_metals li:nth-child(6){border-right: none;}
+    .same_center_middle,.news_content,.about_content,.news-title,.product_center{width: 90%;}
+    .middle{margin: 0px;}
+  
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+.swiper-container  {
+  width: 100%;
+  height: 400PX;
+}
+.swiper-slide {
+  /*background-position: center;
+  background-size: 100% 300px;*/
+}
+.swiper-slide img{width: 100%;height: 100%;}
+/*产品_首页*/
+.product{width: 100%;margin: 50px 0;}
+.product .product_border{border-top: 5px solid #f28d00;padding: 0;}
+.product_center,.product_list,.product_item{position: relative;}
+.product_center ul{margin-top: 60px;}
+.product_pro{position: absolute;width: 200px;height: 40px;display: block;top: 1px;left: 50%;    margin-left: -100px;}
+.product_pro_title{position: absolute;left: 50%; margin-left: -50px; color: white;font-size: 24px; top: 1px;width: 100px;text-align: center;}
+.product_item img{display: block;width:100% ;height: 100%;}
+.product_name{position: absolute;bottom: 0px;margin: 0;}
+.product .dask{position: absolute;top: -10px;background: black;opacity: 0;width: 100%; height: 100%;transition: all 0.5s linear;}
+.product .dask p{margin: 0;color:white;border: 1px solid white;width: 50%;text-align: center;padding: 2%;position: absolute;top: 40%;margin-left: 50%;margin-left: 25%;}
+.product .dask:hover{opacity: .4;top: 0px;}
+.product .dask p:hover{cursor:pointer;}
+.product_list{margin: 5px 0;}
+
+
+/*新闻中心*/
+.news{width: 100%;margin: 50px 0;}
+.news img:hover{transform: scale(1.1);}
+.news li{margin-top: 10px;}
+.news li:nth-child(1){margin-top: 0px;}
+.news-title{ height: 58px;overflow: hidden; background: url(../static/image/bg.png) 0 -790px repeat-x;margin: 0px auto 50px;width: 65%;}
+.news-title a{float: right;line-height: 44px;}
+.news-name{float: left;display: flex;flex-direction: row;}
+.news-name h3{font-size: 44px; color: #ff8400;margin: 0;}
+.news-name span{display: flex;flex-direction: column;font-size: 16px;}
+.news_left>img{display: block;width: 100%;height: 100%;transform: scale(1);transition: all .8s ease;}
+.news_left>h3{margin: 10px 0;font-size: 18px;}
+.news_left p{text-indent : 10px;}
+.news_right_info,.news_right_list{display: flex;flex-direction: row;}
+.news_right_num{font-size: 50px;color: #ff8400;    margin-right: 10px;}
+.news_right_article{margin-left: 20px;}
+.news_right_info img{width: 25%;height: 80px;transform: scale(1);transition: all .8s ease;}
+.news_right_article{display: flex;flex-direction: column;}
+.news_right_article >h3{margin: 0;font-size: 16px;}
+.news_right_article {font-size: 14px;}
+.news_right_article >p{flex: 1;}
+
+/*.news .news_left{padding: 0;}*/
+
+
+
+/*关于我们*/
+.about{width: 100%;margin: 50px 0;}
+.about_content{background: url(../static/image/bg06.jpg) no-repeat;position: relative;padding-bottom: 50px;}
+.about_content .about_zh{text-align: center;color: #ff8400;font-size: 24px;line-height: 44px;padding-top: 20px;}
+.about_content>p:after,.about_content>p:before{ background: #ff8400;
+      content: "";
+      height: 2px;
+      position: absolute;
+      top: 42px;
+      width: 10%;}
+.about_content p:before { left: 32%;}
+.about_content p:after { right: 32%;}    
+.about_en{font-size: 18px;display: block;margin-top: 20px;}   
+.about_des{text-indent: 20px;letter-spacing: 2px;}
+
+/*nav small*/
+@media screen and (max-width: 640px) {
+	.swiper-container{height: 150px;}
+	.same_center_bottom{width: 100%;}
+	.company{justify-content: center;}
+	.company_name{margin-left: 2%;margin-bottom: 0px;margin-top: 10px;}
+    .company_name i:nth-child(1){font-size: 16px;}
+    .company_name i:nth-child(2){font-size: 12px;}
+    .nav_metals li{line-height: 30px;width: 33.33%;text-align: center;border: 1px solid #ff992c;}
+    .nav_metals li:nth-child(3){border-right: none;}
+    .nav_metals li:nth-child(6){border-right: none;}
+    .same_center_middle,.news_content,.about_content,.news-title{width: 90%;}
+    .middle{margin: 0px;}
+    .product{margin: 20px 0;}
+    .product_center{width: 100%;}
+    .product_pro{height: 20px;}
+    .product_pro_title{font-size: 12px; }
+    .product_center ul{margin-top: 20px;}
+    .news{margin: 20px 0;}
+    .news-title{margin: 0px auto 20px;}
+    .news-name span {font-size: 14px;}
+    .news_left>h3 {font-size: 14px;}
+	.news_right_num { font-size: 30px;}
+	.news_right_info img{width: 50px; height: 50px;}
+	.news_right_article{margin-left: 5px;}
+    .news_right_article >h3{font-size: 14px;}
+	.news_right_article i{display: none;}
+	.news_right_article p{margin-bottom: 0;}
+	.about{margin: 20px 0;}
+    .about_content{padding-bottom: 20px;}
+    .about_content p:before { left: 20%;}
+    .about_content p:after { right: 20%;} 
+}
+ 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>走进惠利_惠州亿利五金制品有限公司</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/walkHL.css"/>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+	    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	    <script src="../js/walkHL.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head"></div>
+		<!-- Swiper -->
+		  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide" style="background-image:url(../static/image/6f2q.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(../static/image/bg06.jpg)"></div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination swiper-pagination-white"></div>
+		  </div>
+		<!--nav-->
+		<div class="page_box">
+			<ul class="nav nav-tabs page_content">
+			  <li role="presentation" class="active"><a href="#">公司简介</a></li>
+			  <li role="presentation"><a href="#">组织架构</a></li>
+			</ul>
+		</div>
+		<!--公司简介-->
+		<div class="page_beief_box">
+			<div class="page_beief">
+				<div class="page_text clearfix">
+					<p>惠州市惠利五金有限公司成立于2018年, 公司位于广东省惠州市惠阳区秋长镇岭湖工业区, 专业生产、研发、出口碳钢、不锈钢、合金刚全硅溶胶精密铸造件及其成品.
+					惠利公司以高起点、高质量和高效率为办厂目标, 聚集了一支具有10年以上硅溶胶精密铸造生产技术经验的高级工程师、工程师队伍和现代化专业技术管理队伍. 拥有一支高素质的管理团队和一批优秀的员工队伍. 公司配备了当今国内最先进的射蜡机及其蜡处理自动循环系统、自动旋转壳模干燥生产线、自动真空沾浆机. 在化学成分检测方面: 购进了德国牛津最新型直读光谱仪. 在物理检测方面: 能够进行拉力实验、冲击实验、三座标检测、硬度检测以及金相分析等.
+					</p>					
+				    <img src="../static/image/index_about.jpg" />
+				</div>
+				<div class="page_text_same">
+					<p>本公司生产的产品几乎覆盖了整个机械制造和机械加工行业的可应用领域, 主要有矿山、工程机械、石油、船舶、铁道、汽车、机电、五金工具、农机、运动器材、医疗器械、建筑、厨具、灯具、表业、不锈钢饰品等行业.产品大部分出口至美国、德国、日本、意大利、加拿大等国家.</p>
+					<p>公司采用欧美先进国家的公差和材质标准,.产品材质获得测试报告, 符合欧盟ROHS指令2005/95/EC及其补充指令2005/618/EC的要求.</p>
+					<p>惠利公司将以 “ 精细管理、效率优先 ” 的经营理念, 以市场为导向, 创一流品牌为宗旨, 推行先进的管理模式, 本着 “ 诚信 ” 、“ 高效 ” 、“ 合作 ”、“ 服务 ” 的态度, 竭诚欢迎全球的客商光临惠顾, 同谋发展, 互惠互利，共铸辉煌!</p>
+					<p>成立时间：  2015年6月，搬迁厂址时间为2018年6月</p>
+					<p> 资本额：    RMB:50万</p>
+					<p>营业额：    RMB:1200万</p>
+					<p> 产品：矿山、工程机械、石油、船舶、铁道、汽车、机电、五金工具、农机、运动器材、医疗器械、建筑、厨具、灯具、表业、不锈钢饰品等	</p>
+				</div>			
+			</div>
+			<div class="page_organization container-fluid">
+				<div class="row">
+					<img src="../static/image/zuzi.png" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"/>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+  		<div id="foot"></div>
+  		
+  		<script type="text/javascript">
+  			$('.page_content').children().click(function(){
+				$(this).addClass('active').siblings().removeClass('active');	//改变颜色
+				var id = $(this).index();	//当前操作的元素索引值
+				$('.page_beief_box').children().eq(id).show().siblings().hide();	//当前显示，其他的隐藏。			
+			})
+  		</script>
+	</body>
+</html>
